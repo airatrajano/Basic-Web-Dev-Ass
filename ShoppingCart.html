@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel = "stylesheet" href = "ShoppingCartDesign.css">
+</head>
+<body>
+
+    <div class = "container">
+        <div>
+            <div class = "slide fade">
+                <img src = "img/image1.jpg">
+            </div>
+            <div class = "slide fade">
+                <img src = "img/image2.png">
+            </div>
+            <div class = "slide fade">
+                <img src = "img/image3.png">
+            </div>
+               
+                <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlide(1)">&#10095;</a>
+        
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div> 
+        </div>
+        
+
+        <div class="try">
+
+            <div class="cellphone1">
+                <img class = "product" src="img/Huawei P30 Pro.png" alt="Huawei P30 Pro">
+                <h3>Huawei P30 Pro</h3>
+                <p class="price" id="price1">24,200.00</p>
+                <p><button id = "btn1">Add to Cart</button></p>
+            </div>
+            <div class="cellphone2">
+                <img class = "product" src="img/Huawei P40 pro 5G.png" alt="Huawei P40 pro 5G">
+                <h3>Huawei P40 pro 5G</h3>
+                <p class="price" id ="price2">39,200.00</p>
+                <p><button id = "btn2">Add to Cart</button></p>
+            </div>
+            <div class="cellphone3">
+                <img class = "product" src = "img/xiaomi_mi_10T_5g_.png" alt="xiaomi mi 10T 5g">
+                <h3>Xiaomi Mi 10T 5g</h3>
+                <p class="price" id="price3">24,700.00</p>
+                <p><button id = "btn3">Add to Cart</button></p>
+            </div>
+            <div class="cellphone4">  
+                <img class = "product" src = "img/Xiaomi Mi 11 Ultra.png" alt="xiaomi mi 11 ultra">
+                <h3>Xiaomi Mi 11 Ultra</h3>
+                <p class="price" id="price4">24,500.00</p>
+                <p><button id = "btn4">Add to Cart</button></p>
+            </div>
+            <div class="cellphone5">
+                <img class = "product" src = "img/Apple iphone 12 Pro Max.png" alt="apple iphone 12 pro max">
+                <h3>Apple Iphone 12ProMax</h3>
+                <p class="price" id="price5">79,000.00</p>
+                <p><button id = "btn5">Add to Cart</button></p>
+            </div>
+
+        </div>
+
+        <div>
+            <h1>CART: <span id = "cart_cnt">0</span> </h1>
+            <button id="checking">Checkout</button>
+        </div>
+        
+    </div>
+           
+</div>
+    <script type = "text/javascript" src = "ShoppingCartAcces.js">
+    </script>
+</body>
+
+
+</html>
